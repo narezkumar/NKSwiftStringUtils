@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		64672BC21D8DB77C00615994 /* NKSwiftStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 64672BC01D8DB77C00615994 /* NKSwiftStringUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64672BC91D8DB78B00615994 /* NKStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64672BC81D8DB78B00615994 /* NKStringUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64672BBD1D8DB77C00615994 /* NKSwiftStringUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NKSwiftStringUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64672BC01D8DB77C00615994 /* NKSwiftStringUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKSwiftStringUtils.h; sourceTree = "<group>"; };
 		64672BC11D8DB77C00615994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64672BC81D8DB78B00615994 /* NKStringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStringUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		64672BBF1D8DB77C00615994 /* NKSwiftStringUtils */ = {
 			isa = PBXGroup;
 			children = (
+				64672BC81D8DB78B00615994 /* NKStringUtils.swift */,
 				64672BC01D8DB77C00615994 /* NKSwiftStringUtils.h */,
 				64672BC11D8DB77C00615994 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					64672BBC1D8DB77C00615994 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64672BC91D8DB78B00615994 /* NKStringUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +244,7 @@
 		64672BC61D8DB77C00615994 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -246,10 +252,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NKSwiftStringUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.NKSwiftStringUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +265,7 @@
 		64672BC71D8DB77C00615994 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -264,6 +273,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NKSwiftStringUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.NKSwiftStringUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
